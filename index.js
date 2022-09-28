@@ -1,5 +1,5 @@
 const http = require("http");
-const port = 8080;
+const port = process.env.PORT || 80;
 function reqHandler(req,res){
     res.writeHead(200,{"Content-Type":"text/plain"});
     res.end("Hello World")
